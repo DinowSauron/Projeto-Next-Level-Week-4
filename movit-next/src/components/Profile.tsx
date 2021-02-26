@@ -5,7 +5,7 @@ interface profileProps {
 }
 
 export function Profile(props: profileProps) {
-    const picture = "https://github.com/" + props.gitNick.replace(" ", "") + ".png";
+    const picture = `https://github.com/${ props.gitNick.replace(" ", "") }.png`;
 
     return (
         <div className={styles.profileContainer}>
