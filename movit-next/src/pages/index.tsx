@@ -1,33 +1,72 @@
 import Head  from 'next/head';
+import { GetServerSideProps } from 'next';
 import React from 'react';
 
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CompletedChallenges } from '../components/CompletedChallenges';
+import { CountdownProvider } from '../contexts/CountdownContext';
 import { Countdown } from '../components/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 
 import styles from '../styles/pages/Home.module.css';
+import { ChallengesProvider } from '../contexts/ChallengesContext';
+
+interface HomeProps{
+  level: Number,
+  currentExperience: Number,
+  challengesCompleted: Number
+}
 
 
-export default function Home() {
+export default function Home(props) {
+
+  //tudo que for passado aqu iexecuta no browser
+
+  // console.log(props)
+
   return (
-    <div className={styles.container}>
-      <ExperienceBar/>
-      <Head>
-        <title>Inicio | Movit</title>
-      </Head>
+    <ChallengesProvider 
+    level={props.level} 
+    currentExperience={props.currentExperience} 
+    challengesCompleted={props.challengesCompleted}>
       
-      <section>
-        <div>
-          <Profile gitNick="Dinow Sauron"/>
-          <CompletedChallenges/> 
-          <Countdown/>
-        </div>
-        <div>
-          <ChallengeBox/>
-        </div>
-      </section>
-    </div>
+      <div className={styles.container}>
+        <ExperienceBar/>
+        <Head>
+          <title>Inicio | Movit</title>
+        </Head>
+        
+        
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile gitNick="Dinow Sauron"/>
+              <CompletedChallenges/> 
+              <Countdown/>
+            </div>
+            <div>
+              <ChallengeBox/>
+            </div>
+          </section>
+        </CountdownProvider>
+      </div>
+    </ChallengesProvider>
   )
+}
+
+//essa função PRECISA ter esse nome
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  //tudo que se passar aqu iexecuta no next (back-end)
+
+  const {level, currentExperience, challengesCompleted} = ctx.req.cookies;
+
+
+  return {
+    props: {
+      level: Number(level),
+      currentExperience: Number(currentExperience),
+      challengesCompleted:  Number(challengesCompleted)
+    }
+  };
 }

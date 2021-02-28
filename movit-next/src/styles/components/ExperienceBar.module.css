@@ -20,11 +20,15 @@
 .experienceBar > div > div{
     height: 4px;
     border-radius: 4px;
-    background: var(--green)
+    background: var(--green);
+    
+    transition: width .8s;
 }
 
 span.currentExperience{
     position: absolute;
     transform: translateX(-50%);
     top: 12px;
+
+    transition: left .8s;
 }

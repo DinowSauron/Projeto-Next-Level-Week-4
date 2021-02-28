@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Profile.module.css';
 
 interface profileProps {
@@ -5,6 +7,7 @@ interface profileProps {
 }
 
 export function Profile(props: profileProps) {
+    const {level} = useContext(ChallengesContext);
     const picture = `https://github.com/${ props.gitNick.replace(" ", "") }.png`;
 
     return (
@@ -14,7 +17,7 @@ export function Profile(props: profileProps) {
                 <strong>{props.gitNick}</strong>
                 <p>
                     <img src="icons/level.svg" alt="Level"/>
-                    Level 1
+                    Level {level}
                 </p>
             </div>
         </div>
