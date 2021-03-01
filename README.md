@@ -1,11 +1,16 @@
 # Projeto-Next-Level-Week-4
- 
----
-Nesta NLW (22/2 - 28/2) Tivemos o projeto Chamado Move-it, um projeto baseado no metodo de pomodoro, com uma gameficaçãoa fim de fazer as pessoas cumprirem corretamente os as regras...
 
-Este projeto foi feito do inicio ao fim, incluse com deploy! confira clicando no link abaixo:
-<p>
-<a href="https://movit-lake.vercel.app/">https://movit-lake.vercel.app/</a>
+---
+Neste projeto desenvolvido durante a **[Next Level Week](https://nextlevelweek.com/)** realizada pela **[@Rocketseat](https://github.com/Rocketseat)** Tivemos o projeto Chamado Move-it, um projeto baseado no metodo de pomodoro, com uma gameficaçãoa fim de fazer as pessoas cumprirem corretamente os as regras...
+
+Este projeto foi feito do inicio ao fim, incluse com deploy! Confira clicando **[AQUI](https://movit-lake.vercel.app/)**
+
+
+<p align="center">
+  <a href="https://movit-lake.vercel.app/">WebSite</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
 </p>
 
 ## Fotos Da Aplicação:
@@ -42,11 +47,28 @@ Este projeto foi feito do inicio ao fim, incluse com deploy! confira clicando no
 * js-cookie
 * CSS3
 
+
+## Layout
+
+Você pode visualizar o layout do projeto através dos links abaixo:
+
+- [Layout Web](https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0) 
+
+## Licença
+
+Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: [LICENSE](LICENSE.md) 
+
+
+
+<br><br>
+
 ---
 
 # Comandos utilizados durante o evento:
 
 OBS: note que não é um tutorial de como executar a aplicação, isto são os comandos anotados, claro que com eles você pode saber como executar a aplicação, basta ler oque cada comando executa.
+
+
 
 ## Projeto React
 * ``yarn create react-app moveit --template=typescript``
