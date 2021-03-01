@@ -8,9 +8,9 @@ Este projeto foi feito do inicio ao fim, incluse com deploy! Confira clicando **
 
 <p align="center">
   <a href="https://movit-lake.vercel.app/">WebSite</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#Funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
 </p>
 
 ## Fotos Da Aplicação:
@@ -56,7 +56,7 @@ Você pode visualizar o layout do projeto através dos links abaixo:
 
 ## Licença
 
-Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: [LICENSE](LICENSE.md) 
+Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: [LICENSE](LICENSE) 
 
 
 
