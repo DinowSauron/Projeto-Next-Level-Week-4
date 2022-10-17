@@ -13,15 +13,15 @@ import styles from '../styles/pages/Home.module.css';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 interface HomeProps{
-  level: Number,
-  currentExperience: Number,
-  challengesCompleted: Number
+  level: number,
+  currentExperience: number,
+  challengesCompleted: number
 }
 
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
 
-  //tudo que for passado aqu iexecuta no browser
+  //tudo que for passado aqui executa no browser
 
   // console.log(props)
 
